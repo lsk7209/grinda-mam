@@ -110,12 +110,12 @@ function Footer() {
     <footer className="footer">
       <div className="shell footer-grid">
         <div>
-          <div className="brand" style={{ marginBottom: 16 }}>
+          <Link className="brand" href="/" aria-label="그린다에듀 메인으로 이동" style={{ marginBottom: 16 }}>
             <span className="brand-mark" style={{ width: 34, height: 34, borderRadius: 10, fontSize: 16 }}>
               G
             </span>
             <span style={{ color: "#fff", fontSize: 17 }}>그린다에듀</span>
-          </div>
+          </Link>
           <p>엄마라서 멈췄던 일을, 영어공부방으로 다시 시작하도록 돕습니다. 검증된 커리큘럼과 1:1 본사 지원으로 함께합니다.</p>
         </div>
         <div>
