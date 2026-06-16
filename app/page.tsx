@@ -1,29 +1,11 @@
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 export default function HomePage() {
   return (
     <>
-      <header className="header">
-        <div className="shell header-inner">
-          <Link className="brand" href="/" aria-label="그린다에듀 메인으로 이동">
-            <span className="brand-mark">G</span>
-            <span>그린다에듀</span>
-          </Link>
-          <nav className="nav" aria-label="주요 메뉴">
-            <a href="#why">왜 영어공부방</a>
-            <a href="#how">시작 과정</a>
-            <Link href="/product/english-class-startup">창업반 모집</Link>
-          </nav>
-          <div className="actions">
-            <Link className="btn btn-ghost" href="#why" style={{ padding: "11px 18px", fontSize: 14.5 }}>
-              자세히 보기
-            </Link>
-            <Link className="btn btn-dark" href="/product/english-class-startup" style={{ padding: "11px 20px", fontSize: 14.5 }}>
-              창업반 신청
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <section className="home-hero">
@@ -108,6 +90,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
