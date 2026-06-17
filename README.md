@@ -1,3 +1,5 @@
 # grinda-mam
 
-Grinda Edu product page for the English study room startup course.
+Grinda English product page for the English study room startup course.
+
+Domain: https://igrinda.com

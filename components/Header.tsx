@@ -10,9 +10,9 @@ export function Header({ variant = "home" }: HeaderProps) {
   return (
     <header className="header">
       <div className="shell header-inner">
-        <Link className="brand" href="/" aria-label="그린다에듀 메인으로 이동">
+        <Link className="brand" href="/" aria-label="그린다영어 메인으로 이동">
           <span className="brand-mark">G</span>
-          <span>그린다에듀</span>
+          <span>그린다영어</span>
         </Link>
         <nav className="nav" aria-label="주요 메뉴">
           {isProduct ? (

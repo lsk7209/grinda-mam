@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "가상결제 | 그린다에듀",
-  description: "그린다에듀 영어공부방 창업반 가상결제 신청 페이지입니다."
+  title: "가상결제",
+  description: "그린다영어 영어공부방 창업반 가상결제 신청 페이지입니다."
 };
 
 export default async function CheckoutPage({

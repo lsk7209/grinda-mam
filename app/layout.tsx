@@ -10,9 +10,25 @@ const gowunBatang = Gowun_Batang({
 });
 
 export const metadata: Metadata = {
-  title: "영어공부방 창업반 모집 | 그린다에듀",
+  metadataBase: new URL("https://igrinda.com"),
+  title: {
+    default: "그린다영어 | 영어공부방 창업",
+    template: "%s | 그린다영어"
+  },
   description:
-    "경력이 끊긴 엄마도 집에서 다시 시작할 수 있도록 돕는 그린다에듀 영어공부방 창업반 모집 페이지입니다."
+    "경력이 끊긴 엄마도 집에서 다시 시작할 수 있도록 돕는 그린다영어 영어공부방 창업 안내 사이트입니다.",
+  alternates: {
+    canonical: "/"
+  },
+  openGraph: {
+    title: "그린다영어 | 영어공부방 창업",
+    description:
+      "경력이 끊긴 엄마도 집에서 다시 시작할 수 있도록 돕는 그린다영어 영어공부방 창업 안내 사이트입니다.",
+    url: "https://igrinda.com",
+    siteName: "그린다영어",
+    locale: "ko_KR",
+    type: "website"
+  }
 };
 
 export default function RootLayout({
