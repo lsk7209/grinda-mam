@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
@@ -35,28 +36,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="home-visual" aria-label="엄마와 아이가 집에서 영어를 공부하는 일러스트">
-              <svg viewBox="0 0 420 320" role="img" aria-label="집에서 엄마와 아이가 영어를 공부하는 모습">
-                <rect x="38" y="42" width="344" height="214" rx="24" fill="#FFFDF7" />
-                <rect x="72" y="72" width="132" height="88" rx="12" fill="#2F4A39" />
-                <text x="138" y="123" textAnchor="middle" fontFamily="Gowun Batang, serif" fontSize="31" fontWeight="700" fill="#FBE08A">
-                  ABC
-                </text>
-                <path d="M242 244 Q248 164 288 164 Q328 164 336 244 Z" fill="#3E6B4F" />
-                <circle cx="289" cy="125" r="30" fill="#F6D3B0" />
-                <path d="M259 124 Q258 82 290 82 Q324 82 320 124 Q310 102 290 101 Q274 101 259 124 Z" fill="#5A3E2B" />
-                <path d="M251 178 Q222 162 198 143" stroke="#3E6B4F" strokeWidth="14" strokeLinecap="round" fill="none" />
-                <circle cx="196" cy="141" r="8" fill="#F6D3B0" />
-                <path d="M102 245 Q108 184 140 184 Q172 184 178 245 Z" fill="#F5C84A" />
-                <circle cx="140" cy="157" r="24" fill="#F2C7A1" />
-                <path d="M118 157 Q120 128 140 126 Q163 128 162 157 Q149 145 132 147 Q124 149 118 157 Z" fill="#3B2D23" />
-                <rect x="105" y="222" width="178" height="16" rx="6" fill="#E35D4B" />
-                <rect x="115" y="204" width="158" height="16" rx="6" fill="#3E6B4F" />
-                <circle cx="340" cy="78" r="18" fill="#F5C84A" />
-                <text x="340" y="84" textAnchor="middle" fontFamily="Gowun Batang, serif" fontSize="18" fontWeight="700" fill="#211C15">
-                  A
-                </text>
-              </svg>
+            <div className="home-visual">
+              <Image
+                src="/images/home-hero-korean-mom-english.png"
+                alt="한국인 엄마가 집에서 아이에게 영어를 가르치는 모습"
+                width={1792}
+                height={1024}
+                priority
+                sizes="(max-width: 900px) 100vw, 48vw"
+              />
             </div>
           </div>
         </section>

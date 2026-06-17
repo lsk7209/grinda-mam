@@ -237,13 +237,14 @@ a:focus-visible {
 }
 
 .home-visual {
+  overflow: hidden;
   border-radius: 22px;
   background: rgba(255, 253, 247, 0.78);
   box-shadow: 0 24px 60px rgba(120, 90, 20, 0.2);
-  padding: 32px;
+  padding: 0;
 }
 
-.home-visual svg {
+.home-visual img {
   display: block;
   width: 100%;
   height: auto;
@@ -360,10 +361,12 @@ a:focus-visible {
   letter-spacing: 0.04em;
 }
 
-.product-visual svg {
+.product-visual img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(89, 64, 16, 0.16);
 }
 
 .tags {
@@ -962,7 +965,7 @@ a:focus-visible {
   }
 
   .home-visual {
-    padding: 20px;
+    padding: 0;
   }
 
   .home-cta .btn {
