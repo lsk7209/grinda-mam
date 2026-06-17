@@ -898,6 +898,50 @@ a:focus-visible {
   padding: 14px 16px;
 }
 
+.notice-page {
+  background: var(--cream-2);
+}
+
+.notice-shell {
+  padding-block: 64px 90px;
+}
+
+.notice-heading {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.notice-heading h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.16;
+}
+
+.notice-heading p {
+  margin: 16px 0 0;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.notice-image-card {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(120, 90, 20, 0.08);
+  padding: 18px;
+}
+
+.notice-image-card img {
+  display: block;
+  width: 100%;
+  min-width: 760px;
+  height: auto;
+  border-radius: 12px;
+}
+
 @media (max-width: 900px) {
   .nav {
     display: none;

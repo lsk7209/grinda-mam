@@ -72,8 +72,8 @@ export default function HomePage() {
           <div className="shell">
             <h2 className="serif">오늘, 영어공부방 창업반을 확인하세요</h2>
             <p>창업비용은 할인 없이 500만원 단일 가격으로 안내됩니다.</p>
-            <Link className="btn btn-dark" href="/product/english-class-startup">
-              모집 페이지 보기 <span aria-hidden="true">→</span>
+            <Link className="btn btn-dark" href="/tuition-notice">
+              수업료 상세고지 <span aria-hidden="true">→</span>
             </Link>
           </div>
         </section>
