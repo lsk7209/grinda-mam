@@ -23,8 +23,8 @@ export function Header({ variant = "home" }: HeaderProps) {
             </>
           ) : (
             <>
-              <a href="#why">왜 영어공부방</a>
-              <a href="#how">시작 과정</a>
+              <a href="/#why">왜 영어공부방</a>
+              <a href="/#how">시작 과정</a>
               <Link href="/product/english-class-startup">창업반 모집</Link>
             </>
           )}
@@ -41,7 +41,7 @@ export function Header({ variant = "home" }: HeaderProps) {
             </>
           ) : (
             <>
-              <a className="btn btn-ghost" href="#why" style={{ padding: "11px 18px", fontSize: 14.5 }}>
+              <a className="btn btn-ghost" href="/#why" style={{ padding: "11px 18px", fontSize: 14.5 }}>
                 자세히 보기
               </a>
               <Link className="btn btn-dark" href="/product/english-class-startup" style={{ padding: "11px 20px", fontSize: 14.5 }}>

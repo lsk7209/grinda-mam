@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const UNIT_PRICE = 5_000_000;
@@ -44,9 +45,9 @@ export function ProductPurchase() {
 
       <div className="buy-buttons">
         <button className="btn btn-ghost">장바구니</button>
-        <button className="btn btn-dark">
+        <Link className="btn btn-dark" href={`/checkout?qty=${qty}`}>
           바로 신청하기 <span aria-hidden="true">→</span>
-        </button>
+        </Link>
       </div>
     </div>
   );
