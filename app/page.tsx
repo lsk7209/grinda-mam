@@ -24,7 +24,7 @@ export default function HomePage() {
                 다시 시작하세요
               </h1>
               <p className="home-lead">
-                출퇴근 없이 집에서. 내 아이를 직접 가르치고, 동네 아이들의 영어 선생님이 됩니다.
+                출퇴근 없이 집에서. 내 경험을 살려 영어를 배우고 싶은 사람들의 선생님이 됩니다.
               </p>
               <div className="home-cta">
                 <Link className="btn btn-dark" href="/product/english-class-startup">
@@ -39,7 +39,7 @@ export default function HomePage() {
             <div className="home-visual">
               <Image
                 src="/images/home-hero-korean-mom-english.png"
-                alt="한국인 엄마가 집에서 아이에게 영어를 가르치는 모습"
+                alt="한국인 성인 여성이 집에서 다른 성인 여성에게 영어를 가르치는 모습"
                 width={1792}
                 height={1024}
                 priority
@@ -58,8 +58,8 @@ export default function HomePage() {
               <p>수업 자료와 운영 흐름을 제공해 처음 시작하는 부담을 줄입니다.</p>
             </article>
             <article>
-              <strong>집에서, 내 아이와 함께</strong>
-              <p>출퇴근 대신 내 생활 리듬에 맞춘 공부방 운영을 준비합니다.</p>
+              <strong>집에서, 내 시간에 맞춰</strong>
+              <p>출퇴근 대신 생활 리듬에 맞춘 공부방 운영을 준비합니다.</p>
             </article>
             <article>
               <strong>처음부터 끝까지 본사 지원</strong>
