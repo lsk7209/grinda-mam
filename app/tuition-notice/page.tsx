@@ -28,6 +28,13 @@ export default function TuitionNoticePage() {
               priority
               sizes="100vw"
             />
+            <Image
+              src="/images/tuition-refund-policy.jpg"
+              alt="교습비등 반환기준 안내표"
+              width={1036}
+              height={1509}
+              sizes="100vw"
+            />
           </div>
         </section>
       </main>

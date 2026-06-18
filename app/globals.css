@@ -926,6 +926,9 @@ a:focus-visible {
 }
 
 .notice-image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -940,6 +943,124 @@ a:focus-visible {
   min-width: 760px;
   height: auto;
   border-radius: 12px;
+}
+
+.instructor-page {
+  background: var(--cream-2);
+}
+
+.instructor-shell {
+  padding-block: 64px 90px;
+}
+
+.instructor-heading {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.instructor-heading h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.16;
+}
+
+.instructor-heading p {
+  margin: 16px 0 0;
+  color: var(--ink-soft);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.instructor-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+.instructor-copy,
+.instructor-career,
+.instructor-quote {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(120, 90, 20, 0.08);
+}
+
+.instructor-copy {
+  padding: 34px;
+}
+
+.instructor-copy p {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.instructor-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.instructor-career {
+  padding: 28px;
+}
+
+.instructor-career h2 {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: 24px;
+}
+
+.instructor-career ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.instructor-career li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.instructor-career li::before {
+  position: absolute;
+  top: 0.68em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sage);
+  content: "";
+}
+
+.instructor-quote {
+  margin: 28px 0 0;
+  padding: 30px 34px;
+}
+
+.instructor-quote p {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.instructor-quote cite {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.75;
 }
 
 @media (max-width: 900px) {
@@ -966,6 +1087,10 @@ a:focus-visible {
   }
 
   .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instructor-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1024,6 +1149,12 @@ a:focus-visible {
   .total-row {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .instructor-copy,
+  .instructor-career,
+  .instructor-quote {
+    padding: 24px;
   }
 }
 

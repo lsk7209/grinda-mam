@@ -25,6 +25,7 @@ export function Header({ variant = "home" }: HeaderProps) {
             <>
               <a href="/#why">왜 영어공부방</a>
               <a href="/#how">시작 과정</a>
+              <Link href="/instructor-son-mikyung">강사손미경 소개</Link>
               <Link href="/product/english-class-startup">창업반 모집</Link>
             </>
           )}
